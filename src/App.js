@@ -5,6 +5,7 @@ import BanhoTosa from './pages/BanhoTosa'
 import HotelResort from './pages/HotelResort';
 import Adestramento from './pages/Adestramento';
 import NavbarMenu from './pages/NavbarMenu';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
