@@ -1,24 +1,24 @@
 import './App.css';
-import Frase from './Frase'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Home from './pages/Home'
+import BanhoTosa from './pages/BanhoTosa'
+import HotelResort from './pages/HotelResort';
+import Adestramento from './pages/Adestramento';
+import NavbarMenu from './pages/NavbarMenu';
 
 function App() {
-
-  const nome = 'Miguel'
-  const idade = 82
-  function soma (a,b){
-    return a + b
-  }
-  const novoNome = nome.toUpperCase()
-
   return (
-    <div className="App">
-      <h1>Página de teste</h1>
-      <h3>Nome: {novoNome}🔪🩸</h3>
-      <h3>Idade: {idade}🐣</h3>
-      <p>Soma: { soma(8,9) }</p>
+    <Router>
 
-      <Frase/>
-    </div>
+      <NavbarMenu />
+      
+      <Routes>
+          <Route path="/" element={ <Home />} />
+          <Route path="/banho-e-tosa"  element={ <BanhoTosa />} />
+          <Route path="/hotel-resort"  element={ <HotelResort />} />
+          <Route path="/adestramento"  element={ <Adestramento />} />
+      </Routes>
+    </Router>
   );
 }
 
