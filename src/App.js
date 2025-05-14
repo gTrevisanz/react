@@ -13,14 +13,13 @@ const App = () => {
 			<header>
 				<NavbarMenu />
 			</header>
-
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/banho-e-tosa" element={<BanhoTosa />} />
 				<Route path="/hotel-resort" element={<HotelResort />} />
 				<Route path="/adestramento" element={<Adestramento />} />
 			</Routes>
-			<Banner/>
+			
 		</Router>
 		
 	);
